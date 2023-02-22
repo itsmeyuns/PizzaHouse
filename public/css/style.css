@@ -1,0 +1,150 @@
+html, body {
+  background-color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: initial;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  overflow: hidden;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.content .title {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-top: -90px;
+  color: #3b3a3a;
+  border-bottom: 2px solid;
+}
+
+.mssg {
+  font-size: 20px;
+}
+
+.order-link {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #d93a4a;
+  position: relative;
+}
+.order-link::before {
+  position: absolute;
+  content: '';
+  background-color: #d93a4a;
+  height: 2px;
+  width: 0;
+  bottom: -2px;
+  transition: .3s;
+}
+.order-link:hover {
+  color: #d93a4a;
+}
+.order-link:hover::before {
+  width: 100%;
+}
+
+.create-pizza form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form label {
+  font-size: 18px;
+}
+
+form input, select {
+  margin: 10px 0;
+}
+
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form input[type="submit"], form button {
+  background-color: #f77922;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+form button {
+  margin: 10px 0 5px;
+}
+
+.wrapper {
+  padding: 28px;
+  background-color: #ccc;
+}
+
+.pizza-details h1 {
+  margin-bottom: 20px;
+}
+
+.pizza-details h1 span{
+  font-weight: bold;
+}
+
+.pizza-details p, ul {
+  font-weight: bold;
+}
+
+.back { 
+  display: block;
+  text-decoration: none;
+  color: #f77922;
+  margin: 10px auto;
+  font-size: 18px;
+  width: fit-content;
+}
+.back:hover {
+  color: #f77922;
+  border-bottom: 1px solid;
+}
+
+
+.pizzas-container {
+  display: flex;
+  flex-direction: column;
+}
+.pizzas-container .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.pizza {
+  background-color: #eee;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.pizza p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.pizza img {
+  height: 40px;
+  margin-right: 25px;
+}
